@@ -1,4 +1,4 @@
-https://travis-ci.org/elvis2121/stackoverflow-lite.svg?branch=develop
+[![Build Status](https://travis-ci.org/elvis2121/stackoverflow-lite.svg?branch=develop)](https://travis-ci.org/elvis2121/stackoverflow-lite)
 # StackOverflowlite-UI
 ### WHAT?
 
