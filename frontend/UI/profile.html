@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content= "width=device-width">
+		<title>stackoverflow=lite</title>
+		<link rel="stylesheet" type="text/css" href="../css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo"><a href="index.html"><img src="../images/logo.jpg">
+    </div>
+    <div >
+    <h1 class="title">STACKOVERFLOW-LITE </h1>
+    </div>
+    </div>
+  
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="profile.html">Profile</a>
+  <a href="login.html" style="float:right">logout</a>
+</div>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="opentab(event, 'profile')" id="defaultOpen">profile</button>
+  <button class="tablinks" onclick="opentab(event, 'Questions')">Questions</button>
+  <button class="tablinks" onclick="opentab(event, 'Answers')">Answers</button>
+</div>
+
+
+
+<div id="profile" class="tabcontent">
+  <h3>Profile</h3>
+  <div>
+  <a href="#"><img src="../images/profile.png"></a>
+  <p><b>username:</b>elvis456</p>
+  <p><b>email:</b>elvis456@mymail.com</p>
+  </div>  
+
+</div>
+
+
+
+<div id="Questions" class="tabcontent">
+  <h3>Questions Asked(3)</h3>
+  <div class="card">
+      <h2><a href="answer.html">How to dynamically output python dictionary to html in django?</h2></a>
+      <h5>Asked:, Aug 1, 2018</h5>
+    
+        <p>I want to build a rpm which will contains mypython script python dependent modules.
+     I want to install this rpm in my production environment which have no network, also cannot use/install pip.
+     Adding my spec file below. It creates the rpm but when I try to run it just mentionserror: Failed dependencies:python-cassandra-driver is needed by stats-1.0-1.el7.centos.x86_64
+     NOTE I want the rpm to contain installation of my python modules as well as my python script, so that I can simply run my script on production with installing any module manually..</p>
+    
+    <div class="icons">
+
+      <button class="btn"><i class="fa fa-trash"></i></button>
+      <button class="btn"><i class="fa fa-star"></i></button>
+      <button class="btn"><i class="fa fa-arrow-up"></i></button>
+      <button class="btn"><i class="fa fa-arrow-down"></i></button>
+        
+    </div>
+    
+  </div>
+   <div class="card">
+      <h2><a href="answer.html">Should this post/comments be flagged as rude?</h2></a>
+      <h5>Asked:, Feb 19, 2017</h5>
+
+        <p>Yesterday, I came across a post that was about a Python package installation. I was commenting to see if they could give more info, when I noticed the was using too much caps lock on their posts. I calmly warned them and then edited the question later. The user kept on using caps.
+        I wanted to know if this post's comments should be flagged because I don't want to make any harsh moves.
+        </p>
+        <div class="icons">
+
+
+          <button class="btn"><i class="fa fa-trash"></i></button>
+          <button class="btn"><i class="fa fa-star"></i></button>
+          <button class="btn"><i class="fa fa-arrow-up"></i></button>
+          <button class="btn"><i class="fa fa-arrow-down"></i></button>
+        
+        </div>
+   </div>
+
+     <div class="card">
+      <h2><a href="answer.html">How to measure speed of the vehicle using my android app?</h2></a>
+      <h5>Asked:, Feb 19, 2017</h5>
+
+        <p>I am an absolute beginner at Android. I was planning to make an app that measures the speed of vehicle during the journey if the app is open and to suggest gear shift and fuel consumption based on the speed. Also other features are there like navigation, play music etc. But stuck at getting speed of vehicle. Please someone help me with the complete code from getting runtime location permissions(if needed) to setting the speed to a textview. i have already gone through many posts on StackOverflow and other google searches and tried some but getting errors that I can't make any sense of
+        </p>
+        <div class="icons">
+
+
+          <button class="btn"><i class="fa fa-trash"></i></button>
+          <button class="btn"><i class="fa fa-star"></i></button>
+          <button class="btn"><i class="fa fa-arrow-up"></i></button>
+          <button class="btn"><i class="fa fa-arrow-down"></i></button>
+        
+        </div>
+    </div>
+
+
+
+</div>
+
+<div id="Answers" class="tabcontent">
+  <h3>Answers Given:(3)</h3>
+  <div class="card">
+      <h2>How do i add syntax highlighting to java tag?</h2>
+      <h5>Asked:, Feb 19, 2017</h5>
+
+        <p> I was so confused when I saw this- It made me think if I accidentally click that space (which, both that and to the right look slightly darker than the content area to me, so that isn't helping) that it would close a pop-up that the content is on. >.> Which, I think, is mainly because I just saw news articles on Yahoo that did that, but still. . Please someone help me with the complete code from getting runtime location permissions(if needed) to setting the speed to a textview. i have already gone through many posts on StackOverflow and other google searches and tried some but getting errors that I can't make any sense of
+        </p>
+        <div class="icons">
+
+
+          <button class="btn"><i class="fa fa-trash"></i></button>
+          <button class="btn"><i class="fa fa-star"></i></button>
+          <button class="btn"><i class="fa fa-arrow-up"></i></button>
+          <button class="btn"><i class="fa fa-arrow-down"></i></button>
+        
+        </div>
+    </div>
+    <div class="card">
+      <h2>Should we burninate the [equivalent] tag?</h2>
+      <h5>Asked:, Feb 19, 2017</h5>
+
+        <p>
+            I used a question with the equivalent tag and it got put on hold with the reason being that
+
+            "Questions asking us to recommend or find a book, tool, software library, tutorial or other off-site resource are off-topic for Stack Overflow as they tend to attract opinionated answers and spam. Instead, describe the problem and what has been done so far to solve it."
+        </p>
+        <div class="icons">
+
+
+          <button class="btn"><i class="fa fa-trash"></i></button>
+          <button class="btn"><i class="fa fa-star"></i></button>
+          <button class="btn"><i class="fa fa-arrow-up"></i></button>
+          <button class="btn"><i class="fa fa-arrow-down"></i></button>
+        
+        </div>
+    </div>
+    <div class="card">
+      <h2>What to do if you are above timberline and your descent is cut off by a large forest fire?</h2>
+      <h5>Asked:, Feb 19, 2017</h5>
+
+        <p>The situation: you are backpacking and are above timberline. Streams are ubiquitous, you are well equipped so exposure is not a problem, the entire party is uninjured and healthy. But a large, rapidly moving forest fire sprang up well after you left the trailhead, and your route down is blocked. You have some food, but you will be on short rations if you have to take a long detour to get down. (See option 2, below.)
+
+          Do you (1) activate your PLB; (2) climb up to a pass and try to identify a fire-free way down on the other side of the pass, and activate your PLB only if you cannot find what looks like a safe way down from the pass.
+        </p>
+        <div class="icons">
+
+
+          <button class="btn"><i class="fa fa-trash"></i></button>
+          <button class="btn"><i class="fa fa-star"></i></button>
+          <button class="btn"><i class="fa fa-arrow-up"></i></button>
+          <button class="btn"><i class="fa fa-arrow-down"></i></button>
+        
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="footer">
+	<h2> copyright 2018 stack overflow-lite</h2> 
+  
+</div>
+<script type="text/javascript" src="../scripts/profile.js"></script>
+</body>
+</html>
