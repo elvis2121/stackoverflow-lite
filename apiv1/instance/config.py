@@ -4,11 +4,11 @@
 class Config():
     """The base class for configs"""
     DEBUG = True
-    CSRF_ENABLED = True
+
 
 
 class DevelopmentConfig(Config):
-    """Defines the development environment configs"""
+    """Defines the development environment configuration"""
     DEBUG = True
 
 
