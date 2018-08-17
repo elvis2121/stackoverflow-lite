@@ -7,4 +7,4 @@ install:
   
 
 script: 
-  - python test_questions.py 
+  - python coverage run -m unittest 
