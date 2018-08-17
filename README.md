@@ -1,3 +1,4 @@
+https://travis-ci.org/elvis2121/stackoverflow-lite.svg?branch=develop
 # StackOverflowlite-UI
 ### WHAT?
 
