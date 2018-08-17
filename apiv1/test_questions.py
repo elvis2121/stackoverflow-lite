@@ -45,9 +45,9 @@ class QuestionTestCase(unittest.TestCase):
                                    content_type='application/json')
 
         self.assertEqual(route.status_code, 201)
-        result_in_json = json.loads(route.data.decode('utf-8'))
+        
         result = self.client().get(
-            '/api/v1/questions/{}'.format(result_in_json['id']))
+            '/api/v1/questions/1')
         self.assertEqual(result.status_code, 200)
         self.assertIn('restful API', str(result.data))
 
