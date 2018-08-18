@@ -23,6 +23,7 @@ pluggy==0.7.1
 py==1.5.4
 pycparser==2.18
 pytest==3.7.1
+pytest-cov==2.5.1
 pytz==2018.5
 six==1.11.0
 Werkzeug==0.14.1
