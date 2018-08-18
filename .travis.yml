@@ -8,7 +8,7 @@ install:
   
 
 script:  
-  - py.test --cov=apiv1/test_questions.py
+  - py.test --cov=apiv1 tests/
   
 after_success:
   - coveralls  
