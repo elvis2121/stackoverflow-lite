@@ -1,3 +1,4 @@
+[![Coverage Status](https://coveralls.io/repos/github/elvis2121/stackoverflow-lite/badge.svg?branch=develop)](https://coveralls.io/github/elvis2121/stackoverflow-lite?branch=develop)[![Build Status](https://travis-ci.org/elvis2121/stackoverflow-lite.svg?branch=develop)](https://travis-ci.org/elvis2121/stackoverflow-lite)
 # StackOverflowlite-UI
 ### WHAT?
 
