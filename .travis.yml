@@ -9,7 +9,7 @@ install:
   
 
 script: 
-  - pytest apiv1/test_questions.py --with-coverage --coverage report
+  - pytest apiv1/test_questions.py --with-coverage 
 
   
  after_script:
