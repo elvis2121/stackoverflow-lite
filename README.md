@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/elvis2121/stackoverflow-lite.svg?branch=develop)](https://travis-ci.org/elvis2121/stackoverflow-lite)
+[![Build Status](https://travis-ci.org/elvis2121/stackoverflow-lite.svg?branch=develop)](https://travis-ci.org/elvis2121/stackoverflow-lite)[![Heroku App Status](http://heroku-shields.herokuapp.com/enigmatic-dusk-41276)](https://enigmatic-dusk-41276.herokuapp.com)[![Coverage Status](https://coveralls.io/repos/github/elvis2121/stackoverflow-lite/badge.svg?branch=develop)](https://coveralls.io/github/elvis2121/stackoverflow-lite?branch=develop)
 # StackOverflowlite-UI
 ### WHAT?
 
