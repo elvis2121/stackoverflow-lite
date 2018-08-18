@@ -8,7 +8,7 @@ install:
   
 
 script:  
-  - py.test apiv1
+  - py.test --cov=apiv1 tests/
   
 after_success:
   - coveralls  
