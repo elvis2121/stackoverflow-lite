@@ -9,3 +9,6 @@ install:
 
 script: 
   - pytest apiv1/test_questions.py --coverage
+  
+ after_success:
+- coveralls
