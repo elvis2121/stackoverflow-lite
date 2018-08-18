@@ -4,11 +4,11 @@ python:
 
 install:
   - pip install -r requirements.txt
-  - pip install coveralls
+  
   
 
 script:  
-  - py.test --cov=apiv1
+  - pytest apiv1/test_questions.py
 
   
  after_script:
