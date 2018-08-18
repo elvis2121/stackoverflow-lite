@@ -11,5 +11,4 @@ script:
   - pytest apiv1/test_questions.py
 
   
- after_script:
-  - coveralls
+ 
