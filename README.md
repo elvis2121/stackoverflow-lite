@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/elvis2121/stackoverflow-lite.svg?branch=develop)](https://travis-ci.org/elvis2121/stackoverflow-lite)[![Coverage Status](https://coveralls.io/repos/github/elvis2121/stackoverflow-lite/badge.svg?branch=develop)](https://coveralls.io/github/elvis2121/stackoverflow-lite?branch=develop)
 # WHAT?
 stackoverflow-lite is a web application that allows people to ask questions and provide answers
 
