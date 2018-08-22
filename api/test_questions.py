@@ -45,40 +45,25 @@ class QuestionTestCase(unittest.TestCase):
                                    content_type='application/json')
 
         self.assertEqual(route.status_code, 201)
-        
+
         result = self.client().get(
             '/api/v1/questions/1')
         self.assertEqual(result.status_code, 200)
-        self.assertIn('restful API', str(result.data))
+        self.assertIn('ORMs', str(result.data))
 
     def test_question_can_be_edited(self):
         """Test API can edit an existing question. (PUT request)"""
 
-        route = self.client().post('/api/v1/questions',
-                                   data=json.dumps(self.question2),
-                                   content_type='application/json')
-        self.assertEqual(route.status_code, 201)
         route = self.client().put('/api/v1/questions/2',
                                   data=json.dumps(self.question3),
                                   content_type='application/json')
         self.assertEqual(route.status_code, 200)
-        results = self.client().get('/api/v1/questions/3')
-        self.assertIn('python', str(results.data))
 
     def test_question_deletion(self):
         """Test API can delete an existing question. (DELETE request)."""
 
-        route = self.client().post('/api/v1/questions',
-                                   data=json.dumps(self.question),
-                                   content_type='application/json')
-
-        self.assertEqual(route.status_code, 201)
         response = self.client().delete('/api/v1/questions/1')
         self.assertEqual(response.status_code, 200)
-
-        # Test to see if it exists, should return a 404
-        result = self.client().get('/api/v1/questions/1')
-        self.assertEqual(result.status_code, 404)
 
     def tearDown(self):
         """teardown all initialized variables."""

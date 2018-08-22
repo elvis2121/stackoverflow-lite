@@ -5,35 +5,23 @@
 body {
     font-family: Arial;
     padding: 10px;
-    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-color: #77a2dd;    
 }
-
-.title{
-    
-    font-size: 1vw;
-    margin-left: 150px;
-    color: green;
-    font-family:  Georgia, serif; 
-}
-
 
 .header {
-    padding: 100px;
+    padding: 1px;
     width: 100%;
-    background-image: url("../images/library.jpg");
-  
+    background-image: url("../images/library.jpg");          
 }
 
-
-
 .header h1 {
-    font-size: 60px;
+    font-size: 10px;
     color: green;
     margin-left: 490px;
     margin-top: 1px;
     font-family:  Georgia, serif;
-
-
 }
 
 .ask_question{
@@ -41,26 +29,29 @@ body {
     margin-top: 40px;
     background-color: #4286f4;
     margin-left: 790px;
-    font-family: "Times New Roman", Times, serif;
-    
+    font-family: "Times New Roman", Times, serif;    
 }
-
 
 .logo img{
     position: absolute;
-    left: 0px;
+    left: 10px;
     top:0px;
     border-radius: 80px;
     border: none;
-
 }
-    
 
-.topnav {
-    overflow: hidden;
-    background-color: black;
+input[type=text] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
     margin-top: 10px;
 }
+.topnav{
+    overflow: hidden;
+    background-color: black;
+    margin-top: 20px;
+}
+
 
 .topnav a {
     float: left;
@@ -71,61 +62,12 @@ body {
     text-decoration: none;
 }
 
+
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
 
-
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-.tab button:hover {
-    background-color: #ddd;
-}
-
-.tab button.active {
-    background-color: #ccc;
-}
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-.btn {
-    background-color: DodgerBlue;
-    border: none;
-    color: white;
-    padding: 12px 16px;
-    font-size: 16px;
-    cursor: pointer;
-
-}
-
-.btn:hover {
-    background-color: RoyalBlue;
-}
-
-
-.icons{
-    margin-left: 1550px;
-}
 
 .leftcolumn {   
     float: left;
@@ -135,11 +77,42 @@ body {
 .rightcolumn {
     float: left;
     width: 25%;
-    background-color: #f1f1f1;
     padding-left: 20px;
 }
 
 
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.btn_submit{
+    background-color: green;
+    padding: 20px;
+}
 
 .card {
     background-color: white;
@@ -149,18 +122,20 @@ body {
     border: 1px solid 
 }
 .card_popular {
-    background-color: #bcf244;
+    background-color: #18eada;
     padding: 30px;
     margin-top: 20px;
     list-style-type: none;
     border: 1px solid 
 }
 
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
 
 .footer {
     padding: 20px;
@@ -170,12 +145,16 @@ body {
     background-color: orange;
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 600px) {
     .leftcolumn, .rightcolumn {   
         width: 100%;
         padding: 0;
     }
 }
+
+
+
 
 @media screen and (max-width: 400px) {
     .topnav a {
@@ -185,13 +164,13 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    h1.title  {  
-        color: yellow;
-        font-size: 6vw;
-        margin-left: 95px;
-      
-   }
+     .header  {   
+        width:100%;
+        border: 5px solid red;
+        
+    }
 }
+
 
 @media screen and (max-width: 600px) {
     .ask_question {  
@@ -200,4 +179,26 @@ body {
       
    }
 }
+@media screen and (max-width: 600px) {
+    h1.title  {  
+        color: yellow;
+        font-size: 6vw;
+        margin-left: 95px;
+      
+   }
+}
+
+@media screen and (min-width: 600px) {
+    h1.title  {  
+        margin-left: 190px;
+        font-size: 3vw;
+      
+   }
+   .header  {
+    width: 100%;  
+    
+}
+}
+
+
 
