@@ -2,7 +2,7 @@
 import unittest
 import json
 
-from app.routes.route import create_app
+from app.app import create_app
 
 
 class QuestionTestCase(unittest.TestCase):
