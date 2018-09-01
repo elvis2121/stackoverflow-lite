@@ -1,5 +1,5 @@
 """app routes"""
-from flask_responsetful import Api, responseource, reqparse
+from flask_restful import Api, response, reqparse
 
 from app.model import Questions, Answers
 
