@@ -1,5 +1,5 @@
 """app routes"""
-from flask_restful import resource, reqparse
+from flask_restful import Resource, reqparse
 
 from app.model import Questions, Answers
 
@@ -8,7 +8,7 @@ question = Questions()
 answer = Answers()
 
 
-class QuestionListAPI(resource):
+class QuestionListAPI(Resource):
 
     """defines the POST and GET all question routes"""
 
@@ -36,7 +36,7 @@ class QuestionListAPI(resource):
         return (response), 201
 
 
-class QuestionAPI(resource):
+class QuestionAPI(Resource):
     """Defines the GET,PUT,DELETE questions by ID routes"""
 
     def __init__(self):
@@ -68,7 +68,7 @@ class QuestionAPI(resource):
         return (response), 200
 
 
-class AnswerAPI(resource):
+class AnswerAPI(Resource):
     """Defines the answer a question route"""
 
     def __init__(self):

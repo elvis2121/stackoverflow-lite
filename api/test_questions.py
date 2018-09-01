@@ -2,7 +2,7 @@
 import unittest
 import json
 
-from app.app import create_app
+from app.initialize import create_app
 
 
 class QuestionTestCase(unittest.TestCase):
@@ -14,8 +14,6 @@ class QuestionTestCase(unittest.TestCase):
             config_name="testing")
         self.client = self.app.test_client
         self.question = {'id': 1, 'title': 'how do i build a restful API?'}
-        self.question2 = {'id': 2, 'title': 'how do i code with java?'}
-        self.question3 = {'id': 3, 'title': 'how do i use OOP in python'}
 
     def test_question_creation(self):
         """Test API can create a question (POST request)"""
@@ -29,22 +27,12 @@ class QuestionTestCase(unittest.TestCase):
     def test_api_can_get_all_questions(self):
         """Test API can get a question (GET request)."""
 
-        response = self.client().post('/api/v1/questions',
-                                      data=json.dumps(self.question),
-                                      content_type='application/json')
-
-        self.assertEqual(response.status_code, 201)
         response = self.client().get('/api/v1/questions')
         self.assertEqual(response.status_code, 200)
-        self.assertIn('restful API', str(response.data))
+        self.assertIn('android apps', str(response.data))
 
     def test_api_can_get_question_by_id(self):
         """Test API can get a single question by using it's id."""
-        route = self.client().post('/api/v1/questions',
-                                   data=json.dumps(self.question),
-                                   content_type='application/json')
-
-        self.assertEqual(route.status_code, 201)
 
         result = self.client().get(
             '/api/v1/questions/1')
@@ -54,10 +42,11 @@ class QuestionTestCase(unittest.TestCase):
     def test_question_can_be_edited(self):
         """Test API can edit an existing question. (PUT request)"""
 
-        route = self.client().put('/api/v1/questions/2',
-                                  data=json.dumps(self.question3),
+        route = self.client().put('/api/v1/questions/1',
+                                  data=json.dumps(self.question),
                                   content_type='application/json')
         self.assertEqual(route.status_code, 200)
+        self.assertIn('restful API', str(route.data))
 
     def test_question_deletion(self):
         """Test API can delete an existing question. (DELETE request)."""
@@ -68,8 +57,6 @@ class QuestionTestCase(unittest.TestCase):
     def tearDown(self):
         """teardown all initialized variables."""
         del self.question
-        del self.question2
-        del self.question3
 
 
 # Make the tests conveniently executable
