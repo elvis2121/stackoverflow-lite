@@ -14,7 +14,6 @@ body{
     padding: 20px;
     width:100%;
     margin: auto;
-
     
 }
 
@@ -35,19 +34,14 @@ form {
 h1{
 	color: grey;
 	text-align: center;
-
-
 }
 
 input[type=text], [type=email], [type=password] {
     width: 100%;
     padding: 12px;
-    border-radius: 4px;
-    
+    border-radius: 4px;  
     
 }
-
-
 
 input[type=submit] {
     background-color: green;
@@ -57,8 +51,7 @@ input[type=submit] {
     padding: 20px;
     border: 5px solid ;
     border-radius: 4px;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 
 input[type=reset] {
@@ -69,8 +62,7 @@ input[type=reset] {
     padding: 20px;
     border: 5px solid ;
     border-radius: 4px;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 
 input[type=submit],input[type=reset]:hover {
@@ -83,15 +75,13 @@ input[type=submit],input[type=reset]:hover {
 
               width: 50%;
               margin-left: 15%;
-              border-color: green;
-                          
+              border-color: green;                 
    
    }
    h1.main_header {font-size: 3vw;}
    body{
         
     background-size: 600vw; 
-
 }
 }
 
@@ -101,7 +91,6 @@ input[type=submit],input[type=reset]:hover {
                width: 70%;
                border-color: orange;
                margin-left: 10%;        
-               
     
     }
     body{
@@ -116,8 +105,7 @@ input[type=submit],input[type=reset]:hover {
 
               width: 50%;
               border-color: purple;
-              margin-left: 30%;        
-              
+              margin-left: 30%;     
    
    }
    body{

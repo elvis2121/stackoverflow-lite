@@ -101,9 +101,7 @@ input[type=submit],input[type=reset]:hover {
 
                width: 70%;
                border-color: orange;
-               margin-left: 10%;        
-               
-    
+               margin-left: 10%;    
     }
     body{
         
@@ -117,8 +115,7 @@ input[type=submit],input[type=reset]:hover {
 
               width: 50%;
               border-color: purple;
-              margin-left: 30%;        
-              
+              margin-left: 30%;             
    
    }
    body{

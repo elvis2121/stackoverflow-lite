@@ -5,7 +5,8 @@
 body {
     font-family: Arial;
     padding: 10px;
-    
+    font-family: 'Open Sans', sans-serif;
+    background-color: #77a2dd;
 }
 
 .title{
@@ -48,7 +49,7 @@ body {
 
 .logo img{
     position: absolute;
-    left: 0px;
+    left: 10px;
     top:0px;
     border-radius: 80px;
     border: none;
@@ -107,7 +108,10 @@ body {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 }
+
 .btn {
     background-color: DodgerBlue;
     border: none;
@@ -146,15 +150,12 @@ body {
     padding: 30px;
     margin-top: 20px;
     list-style-type: none;
-    border: 1px solid 
+    border: 1px solid;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+
 }
-.card_popular {
-    background-color: #bcf244;
-    padding: 30px;
-    margin-top: 20px;
-    list-style-type: none;
-    border: 1px solid 
-}
+
 
 .row:after {
     content: "";
