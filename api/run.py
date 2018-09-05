@@ -1,7 +1,7 @@
 """Run this file to start the application"""
 import os
 
-from app.initialize import create_app
+from app import create_app
 
 
 config_name = os.environ.get('FLASK_ENV')

@@ -1,11 +1,10 @@
 """app routes"""
 from flask_restful import Resource, reqparse
 
-from app.model import Questions, Answers
+from .model import Questions
 
 
 question = Questions()
-answer = Answers()
 
 
 class QuestionListAPI(Resource):
